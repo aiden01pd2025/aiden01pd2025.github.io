@@ -158,7 +158,7 @@
     <header class="hero">
       <div>
         <h1>Aiden Gu's projects</h1>
-        <p class="lead">Math and data projects built to be played with: drag the 3D graphs, move the sliders, and press play on the animations.</p>
+        <p class="lead">Math and data science projects built to be played with: drag the 3D graphs, move the sliders, and press play on the animations.</p>
         <p class="hero-links"><a class="btn" href="https://github.com/aiden01pd2025">My GitHub</a></p>
       </div>
       <div>
@@ -177,7 +177,7 @@
             <circle id="p3" class="handle end" r="10" tabindex="0" role="slider" aria-label="Endpoint P3. Use arrow keys to move."/>
           </svg>
         </div>
-        <p class="bezier-note">This is a cubic Bézier curve, one of the splines from my final project. Drag the points to reshape it.</p>
+        <p class="bezier-note">This is a cubic Bézier curve, one of the splines from my multivariable calculus final project. Drag the points to reshape it.</p>
       </div>
     </header>
 
@@ -196,8 +196,8 @@
       <div class="body">
         <h3>Final project: Exploring spline curves</h3>
         <p>How does a computer turn a handful of points into a smooth curve? This slideshow answers that by building splines from the ground up, with sliders and animations that let you drag the control points and watch the curve respond.</p>
-        <p>The approach is to start with the simplest possible piece, a straight line that blends between two points, and ask what goes wrong when you chain pieces together. The answer is corners, so the project defines levels of smoothness (\(C^0\), \(C^1\), \(C^2\)) and then looks for cubic curves that meet them. Each spline type comes from choosing a different set of conditions and solving for a matrix: Hermite splines pin down endpoints and directions, B&eacute;zier curves repeatedly blend points together (De Casteljau's algorithm), and B-splines demand smoothness across every joint at the cost of no longer passing through the control points. Curvature combs make the differences visible.</p>
-        <p>The deck closes with where each kind is used, from physics simulations to vector graphics to cameras, and a look ahead at NURBS and surface splines.</p>
+        <p>The approach is to start with the simplest possible piece, a straight line that blends between two points, and ask what goes wrong when you chain pieces together. The answer is sharp corners; to counter this, the project defines levels of smoothness (\(C^0\), \(C^1\), \(C^2\)) and then looks for cubic curves that meet them. Each spline type comes from choosing a different set of conditions and solving for a matrix: Hermite splines pin down endpoints and velocities, B&eacute;zier curves recursively linear interpolate points together (De Casteljau's algorithm), and B-splines demand continuous second derivatives across every joint at the cost of no longer passing through the control points. Curvature combs and osculating circles are employed to make the differences in smoothness visible.</p>
+        <p>The deck closes with applications for each type of spline, from physics simulations to vector graphics to camera movements, and a look ahead at NURBS and surface splines.</p>
         <p class="stack">Built with Reveal.js, Manim, and Plotly.js.</p>
         <p class="links">
           <a class="btn" href="https://aiden01pd2025.github.io/GOA-Linear-Algebra/Slideshow/PresentationBackup.html">View slideshow</a>
@@ -218,9 +218,9 @@
       </div>
       <div class="body">
         <h3>Project 1: Vectors</h3>
-        <p>Two problems, one toolkit: the dot and cross product. Both come with movable 3D graphs and animations.</p>
-        <p><strong>Skew lines.</strong> Lines in space that never meet and are never parallel are called skew. The project first proves that a pair of lines is skew, using the cross product to rule out parallel lines and row reduction to rule out a shared point. It then sandwiches the two lines between parallel planes, uses the cross product as the planes' normal direction, and projects a vector between the planes onto that normal to get the gap. Repeating the steps with variables instead of numbers gives a formula for any pair of skew lines.</p>
-        <p><strong>Genetics.</strong> Allele frequencies describe each population, and the project turns them into vectors so populations can be compared by angle. Taking square roots first makes every vector a unit vector, which means the dot product is exactly the cosine similarity, and it connects to a standard statistical measure of how close two distributions are. From there it mixes populations as weighted combinations of vectors and uses calculus to find the blend that sits closest to a target population.</p>
+        <p>Two problems, one toolkit: the dot and cross product. Both come with movable 3D graphs and playable animations.</p>
+        <p><strong>Skew lines.</strong> Lines in space that never meet and are never parallel are called skew. The project first uses two arbitrary skew lines as an example, and proves that they are skew by using the cross product to rule out parallel lines and row reduction to rule out a shared point. It then sandwiches the two lines between two parallel planes, uses the cross product to calculate the planes' normal direction, and projects an arbitrary vector connecting the two planes onto that normal vector to get the minimum distance between the two skew lines. Repeating the steps with variables instead of numbers gives a formula for any pair of skew lines.</p>
+        <p><strong>Genetics.</strong> Allele frequencies describe each population, and the project turns them into vectors so populations can be compared by angle. Taking square roots first makes every vector a unit vector, which means the dot product is exactly the cosine similarity, and it connects to a standard statistical measure of how close two distributions are. From there, it mixes populations as weighted linear combinations of vectors and uses calculus to find the blend that sits closest to a target population.</p>
         <p class="stack">Built with R Markdown, Plotly (R), Manim, and ggplot2.</p>
         <p class="links">
           <a class="btn" href="https://aiden01pd2025.github.io/Project-1-Vectors-Chapter-11/Project1.html">View page</a>
