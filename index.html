@@ -240,10 +240,10 @@
       </div>
       <div class="body">
         <h3>Project 2: Race car cornering</h3>
-        <p>What does it take to keep a race car on the track? This project answers with vector-valued functions, animating the position, velocity, and acceleration vectors of a car as it takes a corner.</p>
+        <p>What does it take to keep a race car on the track? This project answers that with vector-valued functions, animating the position, velocity, and acceleration vectors of a car as it takes a corner.</p>
         <p><strong>Flat turns.</strong> Each turn at the Walt Disney World Speedway is modeled as a circular arc, and differentiating the position gives velocity and acceleration. Ranking the turns by curvature alone gives one answer, but ranking them by the normal component of acceleration, which accounts for speed, reorders them. The tightest turn is not necessarily the hardest.</p>
         <p><strong>Banked turns.</strong> At Bristol Motor Speedway, the project starts from a force diagram of gravity, the normal force, and friction on a banked curve. Balancing the vertical forces gives the normal force, summing the horizontal ones gives the centripetal force, and setting that equal to what the circular motion requires gives the fastest speed a car can take the turn. Mass drops out of the result. The model is then used to compare dry and wet pavement, and run backwards to estimate how grippy a car's tires are from its speed.</p>
-        <p class="stack">Built with R Markdown and animated vector diagrams.</p>
+        <p class="stack">Built with R Markdown, Plotly (R), Manim, and ggplot2.</p>
         <p class="links">
           <a class="btn" href="https://aiden01pd2025.github.io/Project-2-Vector-Valued-Functions-Chapter-12/Project2.html">View page</a>
           <a class="code" href="https://github.com/aiden01pd2025/Project-2-Vector-Valued-Functions-Chapter-12">Code on GitHub</a>
@@ -261,10 +261,10 @@
         </svg>
       </div>
       <div class="body">
-        <h3>Project 3: Big ball tumors</h3>
-        <p>Hyperthermia therapy cooks a tumor with heat, and doctors need to know how much of it has reached an effective temperature. This project sets up that question as a volume problem, then solves it with multiple integration. The 3D graphs are movable, and animations show the nested surfaces of equal temperature (equitherms) inside a tumor.</p>
+        <h3>Project 3: Spherical tumors</h3>
+        <p>Hyperthermia therapy kills a tumor with heat, and doctors need to know how much of it has reached an effective temperature. This project sets up that question as a problem about the ratio of volumes, then solves it with iterated integration. The 3D graphs are movable, and animations show the nested surfaces of equal temperature (equitherms) inside a tumor.</p>
         <p>It starts with a perfect sphere, where the key insight is that volume grows with the cube of the radius, so a core that looks like a big share of the radius is a much smaller share of the volume. Real tumors are wrinkled, so the project models them as bumpy spheres whose radius changes with direction, written in spherical coordinates. Their exact volume comes from triple integrals, with symmetry and Wallis' formula taming the trigonometric powers, and each answer is checked against a graphing calculator.</p>
-        <p class="stack">Built with R Markdown and Plotly (R).</p>
+        <p class="stack">Built with R Markdown, Plotly (R), Manim, and ggplot2.</p>
         <p class="links">
           <a class="btn" href="https://aiden01pd2025.github.io/Project-3---Multiple-Integration---Chatper-14/Project3.html">View page</a>
           <a class="code" href="https://github.com/aiden01pd2025/Project-3---Multiple-Integration---Chatper-14">Code on GitHub</a>
@@ -288,8 +288,8 @@
       <div class="body">
         <h3>Final project: Clash Royale cards and decks</h3>
         <p>What makes a good Clash Royale deck? This project pulls card data from the official API and usage and win rates from RoyaleAPI, then looks for patterns that separate strong cards and decks from weak ones.</p>
-        <p>After cleaning the data (recoding missing values, filling gaps using game knowledge, and encoding categories as numbers), the team asked two questions. First, which card traits predict a high win rate? A logistic regression, trained to separate cards above and below the median win rate, found only modest predictive power, with one standout: cards that can target both air and ground tend to win less. Second, what roles do cards play? K-prototypes clustering, which handles a mix of numeric and categorical features, sorted cards into roles like damage dealers, tanks, cycle cards, buildings, and spells. Mapping top decks onto those roles, and checking which roles appear together, revealed common deck archetypes. The slideshow embeds interactive charts, including a 3D view of the clusters.</p>
-        <p class="stack">A team project for DATA 11900, built with Python, scikit-learn, K-prototypes, and Jupyter RISE.</p>
+        <p>After cleaning the data (recoding missing values, filling gaps using game knowledge, and encoding categories as numbers), the team asked two questions. First, which card traits predict a high win rate? A logistic regression, trained to separate cards above and below the median win rate, found only modest predictive power, with one standout: cards that can target both air and ground tend to win less. Second, what roles do cards play? K-prototypes clustering, which handles a mix of numeric and categorical features, sorted cards into roles like damage dealers, tanks, mini-tanks, cycle cards, buildings, and spells. Mapping top decks onto those roles, and checking which roles appear together, revealed common deck archetypes. The slideshow embeds interactive charts, including a 3D view of the clusters.</p>
+        <p class="stack">A team project for University of Chicago's DATA 11900 class, built with Jupyter RISE and various Python libraries.</p>
         <p class="links">
           <a class="btn" href="https://aiden01pd2025.github.io/Data119Spring26ACV/slides.html">View slideshow</a>
           <a class="code" href="https://github.com/aiden01pd2025/Data119Spring26ACV">Code on GitHub</a>
